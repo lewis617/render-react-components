@@ -1,9 +1,10 @@
 # Changelog 
 
-  * [[44a2dd2](http://github.com/lewis617/render-react-components/commit/44a2dd20a1fd9404753c2248f80fadfd54eb5329)] - `style` add state = {} to avoid eslint bug 
 
 ## 1.0.3 / 2018-04-23 
 
+  * [[485dfda](http://github.com/lewis617/render-react-components/commit/485dfda540d97c5475fb9ee5bf43e569b4016f26)] - `feat` 除了 rcc 文件夹和组件入口文件外，其他文件都可以被重写 
+  * [[44a2dd2](http://github.com/lewis617/render-react-components/commit/44a2dd20a1fd9404753c2248f80fadfd54eb5329)] - `style` add state = {} to avoid eslint bug 
   * [[f64f182](http://github.com/lewis617/render-react-components/commit/f64f18276fcd8be0cb3d7f9b9224d15809edc207)] - `feat` add disableCSSModules: true to .rrc.js 
 
 ## 1.0.2 / 2018-04-23 
