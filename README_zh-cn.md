@@ -7,7 +7,7 @@
 
 [View English version](./README.md)
 
-render-react-components（简称 rrc） 是一个包含 `init`、`dev` 的命令行工具，他基于 [roadhog](https://github.com/sorrycc/roadhog) 实现, 但是添加了 `init` 命令来递归找出当前项目中所有的 React 组件，并创建相关文件来隔离地渲染它们。
+render-react-components（简称 rrc） 是一个包含 `init`、`dev` 的命令行工具，他基于 [roadhog](https://github.com/sorrycc/roadhog) 实现, 但是添加了 `init` 命令来递归找出当前项目中所有的 React 组件（仅限于 src 目录下的所有组件），并创建相关文件来隔离地渲染它们。
 
 ![](https://img.alicdn.com/tfs/TB1VPzQnHGYBuNjy0FoXXciBFXa-894-444.gif)
 

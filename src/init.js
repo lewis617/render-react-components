@@ -6,7 +6,7 @@ const cwd = process.cwd();
 const filterNonReactComponent = files =>
   files.filter(comPath => {
     const content = fs.readFileSync(path.join(cwd, comPath)).toString();
-    return content.match(/(import React)|(from 'react')|(from "react")/);
+    return content.match(/(import React)|(from 'react')|(from "react")/) && (!content.match(/(from 'react-dom')|(from "react-dom")/));
   });
 const src2rrc = files =>
   files.map(comPath =>
