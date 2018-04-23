@@ -26,41 +26,33 @@ const init = () => {
       const rrcFiles = src2rrc(filteredFiles);
 
       // 创建 .rrc.js
-      if (!fs.existsSync('.rrc.js')) {
-        fs.writeFileSync(
-          '.rrc.js',
-          `export default {\n  entry: 'rrc/**/*.js',\n  disableCSSModules: true,\n};`,
-        );
-      }
+      fs.writeFileSync(
+        '.rrc.js',
+        `export default {\n  entry: 'rrc/**/*.js',\n  disableCSSModules: true,\n};`,
+      );
 
       // 创建 rrc 文件夹
       if (!fs.existsSync('rrc')) {
         fs.mkdirSync('rrc');
       }
       // 创建 page.html
-      if (!fs.existsSync('rrc/page.html')) {
-        fs.writeFileSync(
-          'rrc/page.html',
-          `<div id="app"></div><script>document.write(\`<script src="\${location.search.replace('?c=', '')}.js"><\\/script>\`)</script>`,
-        );
-      }
+      fs.writeFileSync(
+        'rrc/page.html',
+        `<div id="app"></div><script>document.write(\`<script src="\${location.search.replace('?c=', '')}.js"><\\/script>\`)</script>`,
+      );
       // 创建 index.html
-      if (!fs.existsSync('rrc/index.html')) {
-        fs.writeFileSync(
-          'rrc/index.html',
-          `<ul>${rrcFiles
-            .map(fileName =>
-                `<li><a href="page.html?c=${fileName}">${fileName}</a></li>`,)
-            .join('')}</ul>`,
-        );
-      }
+      fs.writeFileSync(
+        'rrc/index.html',
+        `<ul>${rrcFiles
+          .map(fileName =>
+              `<li><a href="page.html?c=${fileName}">${fileName}</a></li>`,)
+          .join('')}</ul>`,
+      );
       // 创建 index.js
-      if (!fs.existsSync('rrc/index.js')) {
-        fs.writeFileSync(
-          'rrc/index.js',
-          `import './index.html';\nimport './page.html';\n`,
-        );
-      }
+      fs.writeFileSync(
+        'rrc/index.js',
+        `import './index.html';\nimport './page.html';\n`,
+      );
       // 创建 js 文件
       rrcFiles.forEach((fileName, i) => {
         const componentName = fileName.split('_')[
