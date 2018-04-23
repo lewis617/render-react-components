@@ -7,7 +7,7 @@
 
 [查看中文版](./README_zh-cn.md)
 
-render-react-components is a cli tool with `init`、`dev` commands. It's inspired by roadhog, but add the `init` command to recursilvly list all the react components in your project and create files to render them seperately.
+render-react-components is a cli tool with `init`、`dev` commands. It's inspired by roadhog, but add the `init` command to recursilvly list all the react components in your project and create files to render them isolatedly.
 
 ![](https://img.alicdn.com/tfs/TB1VPzQnHGYBuNjy0FoXXciBFXa-894-444.gif)
 
