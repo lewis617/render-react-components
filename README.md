@@ -1,72 +1,29 @@
-# roadhog
+# render-react-components
 
-[![NPM version](https://img.shields.io/npm/v/roadhog.svg?style=flat)](https://npmjs.org/package/roadhog)
-[![Build Status](https://img.shields.io/travis/sorrycc/roadhog.svg?style=flat)](https://travis-ci.org/sorrycc/roadhog)
-[![NPM downloads](http://img.shields.io/npm/dm/roadhog.svg?style=flat)](https://npmjs.org/package/roadhog)
-[![Dependencies](https://david-dm.org/sorrycc/roadhog/status.svg)](https://david-dm.org/sorrycc/roadhog)
+render-react-components is a cli tool with `init`、`dev` commands. It's inspired by roadhog, but add the `init` command to recursilvly list all the react components in your project and create files to render them seperately.
 
-[查看中文版](./README_zh-cn.md)
-
-Roadhog is a cli tool with `dev`、`build` and `test` commands. It's based on react-dev-utils and is consistent with the experience of create-react-app. You can imagine this is a configurable version of create-react-app.
-
-## Docs
-
-* [2.0 发布日志](https://github.com/sorrycc/blog/issues/55)
-* [Migrate from 1.x](./migrate-from-1.x.md)
-* [1.x docs](https://github.com/sorrycc/roadhog/blob/1.x/README_en-us.md)
-
-## Features
-* 📦 out of the box React application development tools, built-in css-modules, babel, postcss, HMR, etc.
-* 🐠 create-react-app experience
-* 🚨 webpack configuration in JSON format
-* 🔥 mock
-* ✂️ test based on jest, ui test with enzyme
+![](https://img.alicdn.com/tfs/TB1VPzQnHGYBuNjy0FoXXciBFXa-894-444.gif)
 
 ## Getting started
 ```bash
 ## Install globally or locally
-$ npm i roadhog -g
+$ npm i render-creact-components -g
 
 ## Check version
-$ roadhog -v
-2.0.0
+$ rrc -v
+1.0.0
+
+## Create files to render components
+$ rrc init
 
 ## Local development
-$ roadhog dev
+$ rrc dev
 
-## Build
-$ roadhog build
-$ NO_COMPRESS=1 roadhog build
-
-## Test
-$ roadhog test
 ```
-
-## Mock
-roadhog dev support mock, configured in  `.roadhogrc.mock.js`.
-
-e.g.
-
-```js
-export default {
-  // Support type as Object and Array
-  'GET /api/users': { users: [1,2] },
-
-  // Method like GET or POST can be omitted
-  '/api/users/1': { id: 1 },
-
-  // Support for custom functions, the API is the same as express@4
-  'POST /api/users/create': (req, res) => { res.end('OK'); },
-};
-```
-
-## Use the public directory
-
-Files in the public directory would be copied to the output directory (by default `./dist`) on the dev and build. So favicon, iconfont, html, html quoted pictures could be stored here.
 
 ## Configuration
 
-roadhog's webpack part is based on the af-webpack's implementation. For configuration, create `.webpackrc` in the project root. The format is JSON, e.g.
+render-react-components's webpack part is based on the af-webpack's implementation. For configuration, create `.webpackrc` in the project root. The format is JSON, e.g.
 
 ```js
 {
@@ -353,14 +310,6 @@ $ set PORT=3000&&roadhog dev
 # Or use cross-env for all platforms
 $ cross-env PORT=3000 roadhog dev
 ```
-
-## FAQ
-
-### Why is it called roadhog ?
-
-roadhog is a hero from overwatch, just like [dva](https://github.com/dvajs/dva).
-
-<img src="https://gw.alipayobjects.com/zos/rmsportal/nnuuSFhDFUOfvYSRyvBh.png" width="405" height="411" />
 
 ## LICENSE
 
