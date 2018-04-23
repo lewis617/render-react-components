@@ -14,7 +14,7 @@ render-react-components（简称 rrc） 是一个包含 `init`、`dev` 的命令
 ## Getting started
 ```bash
 ## 本地或者全局安装
-$ npm i render-creact-components -g
+$ npm i render-react-components -g
 
 ## 检查版本
 $ rrc -v

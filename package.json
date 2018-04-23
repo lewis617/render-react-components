@@ -1,6 +1,6 @@
 {
   "name": "render-react-components",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Cli tool for rendering react components.",
   "bin": {
     "rrc": "./bin/rrc.js",

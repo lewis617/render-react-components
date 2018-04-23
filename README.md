@@ -14,7 +14,7 @@ render-react-components is a cli tool with `init`、`dev` commands. It's inspire
 ## Getting started
 ```bash
 ## Install globally or locally
-$ npm i render-creact-components -g
+$ npm i render-react-components -g
 
 ## Check version
 $ rrc -v
