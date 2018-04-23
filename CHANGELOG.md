@@ -1,5 +1,6 @@
 # Changelog 
 
+  * [[f64f182](http://github.com/lewis617/render-react-components/commit/f64f18276fcd8be0cb3d7f9b9224d15809edc207)] - `feat` add disableCSSModules: true to .rrc.js 
 
 ## 1.0.2 / 2018-04-23 
 
