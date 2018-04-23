@@ -1,5 +1,6 @@
 # Changelog 
 
+  * [[c2e07ba](http://github.com/lewis617/render-react-components/commit/c2e07bac3536416320a0b84afddddd766b161184)] - `docs` 添加中文文档 
   * [[081d632](http://github.com/lewis617/render-react-components/commit/081d6325a9c05bba0dba9caeeef1f9e6410e145c)] - `refactor` update Makefile 
 
 ## 1.0.0 / 2018-04-23 
