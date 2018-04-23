@@ -1,5 +1,6 @@
 # Changelog 
 
+  * [[f64549f](http://github.com/lewis617/render-react-components/commit/f64549f28714fa712d06e2311769278f7e3378f2)] - `docs` 将 separately 改为 isolatedly，使其更表达更合理 
   * [[3c0b490](http://github.com/lewis617/render-react-components/commit/3c0b490f0c5979e7dd39d16ad2fa10a10b01dccd)] - `docs` 更新文档 
   * [[c2e07ba](http://github.com/lewis617/render-react-components/commit/c2e07bac3536416320a0b84afddddd766b161184)] - `docs` 添加中文文档 
   * [[081d632](http://github.com/lewis617/render-react-components/commit/081d6325a9c05bba0dba9caeeef1f9e6410e145c)] - `refactor` update Makefile 
