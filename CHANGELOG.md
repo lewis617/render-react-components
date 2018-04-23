@@ -1,5 +1,8 @@
 # Changelog 
 
+
+## 1.0.2 / 2018-04-23 
+
   * [[7c9b2a9](http://github.com/lewis617/render-react-components/commit/7c9b2a9df5c16540489538a6572573e9e85a0c00)] - `feat` add filter for ReactDom.render file 
 
 ## 1.0.1 / 2018-04-23 
