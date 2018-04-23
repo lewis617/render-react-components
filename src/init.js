@@ -29,7 +29,7 @@ const init = () => {
       if (!fs.existsSync('.rrc.js')) {
         fs.writeFileSync(
           '.rrc.js',
-          `export default {\n  entry: 'rrc/**/*.js',\n};`,
+          `export default {\n  entry: 'rrc/**/*.js',\n  disableCSSModules: true,\n};`,
         );
       }
 
