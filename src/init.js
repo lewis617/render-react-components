@@ -43,9 +43,9 @@ const init = () => {
       // 创建 index.html
       fs.writeFileSync(
         'rrc/index.html',
-        `<ul>${rrcFiles
+        `温馨提示：如需修改组件的 props 或者引入第三方依赖，可以在 rrc 文件夹中找到同名的 js 文件来修改。<ul>${rrcFiles
           .map(fileName =>
-              `<li><a href="page.html?c=${fileName}">${fileName}</a></li>`,)
+              `<li><a href="page.html?c=${fileName}">${fileName}</a></li>`)
           .join('')}</ul>`,
       );
       // 创建 index.js
