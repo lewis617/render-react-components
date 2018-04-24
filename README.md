@@ -7,7 +7,7 @@
 
 [查看中文版](./README_zh-cn.md)
 
-render-react-components is a cli tool with `init`、`dev` commands. It's inspired by roadhog, but add the `init` command to recursilvly list all the react components in your project(only in src derectory) and create files to render them isolatedly.
+render-react-components is a cli tool with `init`、`dev` commands. It's inspired by roadhog, but add the `init` command to recursilvly search all the react components in your project(only in src derectory) and create files to render them isolatedly.
 
 ![](https://img.alicdn.com/tfs/TB1VPzQnHGYBuNjy0FoXXciBFXa-894-444.gif)
 
@@ -16,12 +16,13 @@ render-react-components is a cli tool with `init`、`dev` commands. It's inspire
 ## Install globally or locally
 $ npm i render-react-components -g
 
-## Check version
-$ rrc -v
-1.0.0
-
 ## Create files to render components
 $ rrc init
+
+## you can use the filter argument(the keyword of compoennt path) to init for part of components
+$ rrc init --filter=Component1
+## or simply use -f=keyword to filter
+$ rrc init -f=Component1
 
 ## Local development
 $ rrc dev
@@ -30,15 +31,7 @@ $ rrc dev
 
 ## Configuration
 
-render-react-components's webpack part is based on the af-webpack's implementation. For configuration, create `.rrc` in the project root. The format is JSON, e.g.
-
-```js
-{
-  "externals": { "react": "window.React" }
-}
-```
-
-If you prefer JS configuration, or need to do some programming or abstract judgment, you can use `.rrc.js` configuration file, support ES6 syntax, e.g.
+render-react-components's webpack part is based on the af-webpack's implementation. For configuration, you can use `.rrc.js` configuration file, support ES6 syntax, e.g.
 
 ```js
 export default {
@@ -46,7 +39,7 @@ export default {
 }
 ```
 
-More details, please checkout the [`.webpackrc.js`](https://github.com/sorrycc/roadhog/blob/master/README.md#configuration) of roadhog.
+More details, please checkout the [`.webpackrc.js`](https://github.com/sorrycc/roadhog/blob/master/README.md#configuration) of roadhog. They are exactly the same.
 
 ## LICENSE
 

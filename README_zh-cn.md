@@ -7,7 +7,7 @@
 
 [View English version](./README.md)
 
-render-react-components（简称 rrc） 是一个包含 `init`、`dev` 的命令行工具，他基于 [roadhog](https://github.com/sorrycc/roadhog) 实现, 但是添加了 `init` 命令来递归找出当前项目中所有的 React 组件（仅限于 src 目录下的所有组件），并创建相关文件来隔离地渲染它们。
+render-react-components（简称 rrc） 是一个包含 `init`、`dev` 的命令行工具，他基于 [roadhog](https://github.com/sorrycc/roadhog) 实现, 但是添加了 `init` 命令来递归找出当前项目中所有的 React 组件（仅限于 src 目录下的所有组件），并为它们创建相互隔离的 demo 页面。
 
 ![](https://img.alicdn.com/tfs/TB1VPzQnHGYBuNjy0FoXXciBFXa-894-444.gif)
 
@@ -16,14 +16,15 @@ render-react-components（简称 rrc） 是一个包含 `init`、`dev` 的命令
 ## 本地或者全局安装
 $ npm i render-react-components -g
 
-## 检查版本
-$ rrc -v
-1.0.0
-
-## 为项目中所有的 React 组件，初始化渲染环境
+## 为项目中所有的 React 组件，创建 demo 页面
 $ rrc init
 
-## 本地开发
+## 如果你只想给部分组件创建 demo 页面，可以使用 filter 参数，输入组件路径的关键词即可
+$ rrc init --filter=Component1
+## 或者简写
+$ rrc init -f=Component1
+
+## 本地开发，支持代码热加载
 $ rrc dev
 
 ```
@@ -37,7 +38,7 @@ export default {
 }
 ```
 
-更多配置，请参考 roadhog 的 [.webpackrc.js](https://github.com/sorrycc/roadhog/blob/master/README_zh-cn.md#%E9%85%8D%E7%BD%AE)。
+更多配置，请参考 roadhog 的 [.webpackrc.js](https://github.com/sorrycc/roadhog/blob/master/README_zh-cn.md#%E9%85%8D%E7%BD%AE)。他们的写法是一样的。
 
 ## LICENSE
 
