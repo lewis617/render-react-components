@@ -28,7 +28,15 @@ const init = (filter) => {
       // 创建 .rrc.js
       fs.writeFileSync(
         '.rrc.js',
-        `export default {\n  entry: 'rrc/**/*.js',\n  disableCSSModules: true,\n};`,
+        `export default {
+  entry: 'rrc/**/*.js',
+  disableCSSModules: true,
+  externals: {
+    react: 'React',
+    'react-dom': 'ReactDOM',
+    'prop-types': 'PropTypes',
+  }
+};`,
       );
 
       // 创建 rrc 文件夹
@@ -38,7 +46,9 @@ const init = (filter) => {
       // 创建 page.html
       fs.writeFileSync(
         'rrc/page.html',
-        `<div id="app"></div><script>document.write(\`<script src="\${location.search.replace('?c=', '')}.js"><\\/script>\`)</script>`,
+        `<script src="//f.alicdn.com/??react/16.3.0/react.production.min.js,react-dom/16.3.0/react-dom.production.min.js,prop-types/15.6.0/prop-types.min.js"></script>
+<div id="app"></div>
+<script>document.write(\`<script src="\${location.search.replace('?c=', '')}.js"><\\/script>\`)</script>`,
       );
       // 创建 index.html
       fs.writeFileSync(
