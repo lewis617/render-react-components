@@ -1,9 +1,10 @@
 # Changelog 
 
-  * [[81a0119](http://github.com/lewis617/render-react-components/commit/81a011941fc73b64a53544e0101733da02e7e1f8)] - `style` change App to componentNameComponent 
+  * [[3c30f01](http://github.com/lewis617/render-react-components/commit/3c30f0142ae9ea93ece10e9f3425e494704a924d)] - `perf` 添加 external 提升性能 
 
 ## 1.1.0 / 2018-04-24 
 
+  * [[81a0119](http://github.com/lewis617/render-react-components/commit/81a011941fc73b64a53544e0101733da02e7e1f8)] - `style` change App to componentNameComponent 
   * [[2921cc8](http://github.com/lewis617/render-react-components/commit/2921cc810f8fba55cea609fd7727a933b1e1c5e9)] - `docs` 更新文档 
   * [[14eda22](http://github.com/lewis617/render-react-components/commit/14eda224e43887a9c62753460d45c96bb51a8e6c)] - `feat` add clean command 
   * [[42e7199](http://github.com/lewis617/render-react-components/commit/42e7199ff5c30a615fdf3ff8bac3d25fe5413ab3)] - `fix` fix bug of atool-monitor 
