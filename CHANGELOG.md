@@ -1,9 +1,10 @@
 # Changelog 
 
-  * [[7a13be9](http://github.com/lewis617/render-react-components/commit/7a13be9b0eb921290093c280ca83862c27f83b65)] - `docs` 更新相应文档 
+  * [[f7efa46](http://github.com/lewis617/render-react-components/commit/f7efa4659a43e0da2f3d14ab526844b683233f6f)] - `fix` 修复了 webpack 依赖项无法在全局使用的问题 
 
 ## 1.1.0 / 2018-04-25 
 
+  * [[7a13be9](http://github.com/lewis617/render-react-components/commit/7a13be9b0eb921290093c280ca83862c27f83b65)] - `docs` 更新相应文档 
   * [[1a5f02b](http://github.com/lewis617/render-react-components/commit/1a5f02bc0bdb6c5c20214f6cd6166f88e8718d58)] - `fix` remove i npm 
   * [[5aa9b2b](http://github.com/lewis617/render-react-components/commit/5aa9b2b90d5e62ddcdde32d1702a8188d18f8cc8)] - `feat` 放弃 roadhog，完全自己写 
   * [[af017b4](http://github.com/lewis617/render-react-components/commit/af017b49592f33320b473b60b321e0ea6d6738d1)] - `fix` 修复移动端viewport 问题 
