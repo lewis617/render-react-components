@@ -1,9 +1,10 @@
 # Changelog 
 
-  * [[3c30f01](http://github.com/lewis617/render-react-components/commit/3c30f0142ae9ea93ece10e9f3425e494704a924d)] - `perf` 添加 external 提升性能 
+  * [[af017b4](http://github.com/lewis617/render-react-components/commit/af017b49592f33320b473b60b321e0ea6d6738d1)] - `fix` 修复移动端viewport 问题 
 
 ## 1.1.0 / 2018-04-24 
 
+  * [[3c30f01](http://github.com/lewis617/render-react-components/commit/3c30f0142ae9ea93ece10e9f3425e494704a924d)] - `perf` 添加 external 提升性能 
   * [[81a0119](http://github.com/lewis617/render-react-components/commit/81a011941fc73b64a53544e0101733da02e7e1f8)] - `style` change App to componentNameComponent 
   * [[2921cc8](http://github.com/lewis617/render-react-components/commit/2921cc810f8fba55cea609fd7727a933b1e1c5e9)] - `docs` 更新文档 
   * [[14eda22](http://github.com/lewis617/render-react-components/commit/14eda224e43887a9c62753460d45c96bb51a8e6c)] - `feat` add clean command 
