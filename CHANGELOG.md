@@ -1,5 +1,6 @@
 # Changelog 
 
+  * [[14eda22](http://github.com/lewis617/render-react-components/commit/14eda224e43887a9c62753460d45c96bb51a8e6c)] - `feat` add clean command 
 
 ## 1.1.0 / 2018-04-24 
 
