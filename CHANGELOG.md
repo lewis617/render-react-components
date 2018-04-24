@@ -1,9 +1,10 @@
 # Changelog 
 
-  * [[14eda22](http://github.com/lewis617/render-react-components/commit/14eda224e43887a9c62753460d45c96bb51a8e6c)] - `feat` add clean command 
 
 ## 1.1.0 / 2018-04-24 
 
+  * [[2921cc8](http://github.com/lewis617/render-react-components/commit/2921cc810f8fba55cea609fd7727a933b1e1c5e9)] - `docs` 更新文档 
+  * [[14eda22](http://github.com/lewis617/render-react-components/commit/14eda224e43887a9c62753460d45c96bb51a8e6c)] - `feat` add clean command 
   * [[42e7199](http://github.com/lewis617/render-react-components/commit/42e7199ff5c30a615fdf3ff8bac3d25fe5413ab3)] - `fix` fix bug of atool-monitor 
   * [[bc02d11](http://github.com/lewis617/render-react-components/commit/bc02d11dfba1694bb3e0ba4d6fd30b5375bf1982)] - `docs` 更新中文文档跳转的链接 
   * [[7691e04](http://github.com/lewis617/render-react-components/commit/7691e04d33addff133f9b8b49a405fbed0c04e9e)] - `docs` 更新过滤功能的文档 
