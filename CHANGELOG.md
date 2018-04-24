@@ -1,5 +1,6 @@
 # Changelog 
 
+  * [[81a0119](http://github.com/lewis617/render-react-components/commit/81a011941fc73b64a53544e0101733da02e7e1f8)] - `style` change App to componentNameComponent 
 
 ## 1.1.0 / 2018-04-24 
 
