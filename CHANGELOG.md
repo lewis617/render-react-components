@@ -1,6 +1,10 @@
 # Changelog 
 
 
+## 1.1.0 / 2018-04-24 
+
+  * [[01da084](http://github.com/lewis617/render-react-components/commit/01da08429a4bf208d53dd91f05acfc78dfd92d93)] - `feat` 添加 filter 功能 
+
 ## 1.0.3 / 2018-04-23 
 
   * [[46542a1](http://github.com/lewis617/render-react-components/commit/46542a17a3a88eb037b9ce6e47d628837095be8b)] - `docs` add tips to index.html 
