@@ -3,6 +3,7 @@
 
 ## 1.1.0 / 2018-04-24 
 
+  * [[bc02d11](http://github.com/lewis617/render-react-components/commit/bc02d11dfba1694bb3e0ba4d6fd30b5375bf1982)] - `docs` 更新中文文档跳转的链接 
   * [[7691e04](http://github.com/lewis617/render-react-components/commit/7691e04d33addff133f9b8b49a405fbed0c04e9e)] - `docs` 更新过滤功能的文档 
   * [[01da084](http://github.com/lewis617/render-react-components/commit/01da08429a4bf208d53dd91f05acfc78dfd92d93)] - `feat` 添加 filter 功能 
 
