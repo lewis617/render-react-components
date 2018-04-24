@@ -38,6 +38,7 @@ For configuration, you can use `.rrc.js` configuration file, e.g.
 
 ```js
 module.exports = {
+  disableCSSModules: true,
   externals: {
     react: 'React',
     'react-dom': 'ReactDOM',
@@ -45,6 +46,28 @@ module.exports = {
   }
 };
 ```
+
+### disableCSSModules
+
+Disable [CSS Modules](https://github.com/css-modules/css-modules)，we do not recommend doing this.
+
+### externals
+
+Configure webpack's [externals] (https://webpack.js.org/configuration/externals/) property.
+
+e.g.
+
+```js
+// Don't pack react and react-dom
+"externals": {
+  "react": "window.React",
+  "react-dom": "window.ReactDOM"
+}
+```
+
+### alias
+
+Configure webpack's [resolve.alias](https://webpack.js.org/configuration/resolve/#resolve-alias) property.
 
 ## LICENSE
 

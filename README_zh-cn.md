@@ -46,6 +46,26 @@ module.exports = {
 };
 ```
 
+### disableCSSModules
+
+禁用 [CSS Modules](https://github.com/css-modules/css-modules)。
+
+### externals
+
+配置 webpack 的?[externals](https://webpack.js.org/configuration/externals/)?属性。
+比如：
+
+```js
+// 配置 react 和 react-dom 不打入代码
+"externals": {
+  "react": "window.React",
+  "react-dom": "window.ReactDOM"
+}
+```
+
+### alias
+配置 webpack 的 [resolve.alias](https://webpack.js.org/configuration/resolve/#resolve-alias) 属性。
+
 ## LICENSE
 
 MIT
