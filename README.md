@@ -5,7 +5,7 @@
 [![NPM downloads](http://img.shields.io/npm/dm/render-react-components.svg?style=flat)](https://npmjs.org/package/render-react-components)
 [![Dependencies](https://david-dm.org/lewis617/render-react-components/status.svg)](https://david-dm.org/lewis617/render-react-components)
 
-[查看中文版](./README_zh-cn.md)
+[查看中文版](https://github.com/lewis617/render-react-components/blob/master/README_zh-cn.md)
 
 render-react-components is a cli tool with `init`、`dev` commands. It's inspired by roadhog, but add the `init` command to recursilvly search all the react components in your project(only in src derectory) and create files to render them isolatedly.
 

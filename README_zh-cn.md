@@ -5,7 +5,7 @@
 [![NPM downloads](http://img.shields.io/npm/dm/render-react-components.svg?style=flat)](https://npmjs.org/package/render-react-components)
 [![Dependencies](https://david-dm.org/lewis617/render-react-components/status.svg)](https://david-dm.org/lewis617/render-react-components)
 
-[View English version](./README.md)
+[View English version](https://github.com/lewis617/render-react-components/blob/master/README.md)
 
 render-react-components（简称 rrc） 是一个包含 `init`、`dev` 的命令行工具，他基于 [roadhog](https://github.com/sorrycc/roadhog) 实现, 但是添加了 `init` 命令来递归找出当前项目中所有的 React 组件（仅限于 src 目录下的所有组件），并为它们创建相互隔离的 demo 页面。
 
