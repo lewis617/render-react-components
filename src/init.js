@@ -46,14 +46,16 @@ const init = (filter) => {
       // 创建 page.html
       fs.writeFileSync(
         'rrc/page.html',
-        `<script src="//f.alicdn.com/??react/16.3.0/react.production.min.js,react-dom/16.3.0/react-dom.production.min.js,prop-types/15.6.0/prop-types.min.js"></script>
+        `<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<script src="//f.alicdn.com/??react/16.3.0/react.production.min.js,react-dom/16.3.0/react-dom.production.min.js,prop-types/15.6.0/prop-types.min.js"></script>
 <div id="app"></div>
 <script>document.write(\`<script src="\${location.search.replace('?c=', '')}.js"><\\/script>\`)</script>`,
       );
       // 创建 index.html
       fs.writeFileSync(
         'rrc/index.html',
-        `温馨提示：如需修改组件的 props 或者引入第三方依赖，可以在 rrc 文件夹中找到同名的 js 文件来修改。<ul>${rrcFiles
+        `<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+温馨提示：如需修改组件的 props 或者引入第三方依赖，可以在 rrc 文件夹中找到同名的 js 文件来修改。<ul>${rrcFiles
           .map(fileName =>
               `<li><a href="page.html?c=${fileName}">${fileName}</a></li>`)
           .join('')}</ul>`,
