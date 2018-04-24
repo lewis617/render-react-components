@@ -1,6 +1,5 @@
 import chalk from 'chalk';
 import { fork } from 'child_process';
-import atoolMonitor from 'atool-monitor';
 import yargs from 'yargs';
 import init from './init';
 
@@ -44,7 +43,7 @@ switch (aliasedScript) {
     break;
   }
   case 'dev': {
-    atoolMonitor.emit();
+    require('atool-monitor').emit();
     const proc = fork(
       require.resolve(`../lib/scripts/${aliasedScript}`),
       args,

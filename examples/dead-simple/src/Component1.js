@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 class Component1 extends Component {
   render() {
-    return <div>这是组件 Component1</div>;
+    return <div>This is Component1</div>;
   }
 }
 
