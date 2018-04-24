@@ -38,7 +38,8 @@
     "arrow-parens": [0],
     "space-before-function-paren": [0],
     "no-useless-escape": [0],
-    "object-curly-newline": [0]
+    "object-curly-newline": [0],
+    "no-console": [0]
   },
   "parserOptions": {
     "ecmaFeatures": {

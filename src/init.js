@@ -3,10 +3,10 @@ const path = require('path');
 const fs = require('fs');
 
 const cwd = process.cwd();
-const filterNonReactComponent = files =>
+const filterNonReactComponent = (files, filterKeyword = '') =>
   files.filter(comPath => {
     const content = fs.readFileSync(path.join(cwd, comPath)).toString();
-    return content.match(/(import React)|(from 'react')|(from "react")/) && (!content.match(/(from 'react-dom')|(from "react-dom")/));
+    return comPath.includes(filterKeyword) && content.match(/(import React)|(from 'react')|(from "react")/) && (!content.match(/(from 'react-dom')|(from "react-dom")/));
   });
 const src2rrc = files =>
   files.map(comPath =>
@@ -15,13 +15,13 @@ const src2rrc = files =>
       .replace(/\//g, '_')
       .replace(/_index|\.js/g, ''));
 
-const init = () => {
+const init = (filter) => {
   glob('src/**/*.js', (err, res) => {
     if (err) {
       console.log('Error', err);
     } else {
       // 过滤非 React 组件
-      const filteredFiles = filterNonReactComponent(res);
+      const filteredFiles = filterNonReactComponent(res, filter);
       // 把 src 变成 rrc，顺便把 / 变成 _，把 index 去掉
       const rrcFiles = src2rrc(filteredFiles);
 
