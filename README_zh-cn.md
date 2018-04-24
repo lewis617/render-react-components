@@ -27,6 +27,9 @@ $ rrc init -f=Component1
 ## 本地开发，支持代码热加载
 $ rrc dev
 
+## 删除 rrc 文件夹和 .rrc.js 文件，相当于删除了 rrc init 创建的所有文件
+$ rrc clean
+
 ```
 
 ## 配置

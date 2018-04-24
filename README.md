@@ -27,6 +27,9 @@ $ rrc init -f=Component1
 ## Local development
 $ rrc dev
 
+## Clean rrc directory and .rrc.js
+$ rrc clean
+
 ```
 
 ## Configuration

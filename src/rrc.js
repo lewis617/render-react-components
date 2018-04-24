@@ -1,6 +1,7 @@
 import chalk from 'chalk';
 import { fork } from 'child_process';
 import yargs from 'yargs';
+import rimraf from 'rimraf';
 import init from './init';
 
 require('graceful-process')({ logLevel: 'warn' });
@@ -57,6 +58,11 @@ switch (aliasedScript) {
     process.once('exit', () => {
       proc.kill();
     });
+    break;
+  }
+  case 'clean': {
+    rimraf.sync('rrc');
+    rimraf.sync('.rrc.js');
     break;
   }
   default:
