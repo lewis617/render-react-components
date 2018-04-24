@@ -65,7 +65,7 @@ const init = (filter) => {
 import { render } from 'react-dom';
 import ${componentName} from '../${filteredFiles[i].replace('.js', '')}';
 
-class App extends Component {
+class ${componentName}Contaner extends Component {
   state = {}
   render() {
     return (
@@ -76,7 +76,7 @@ class App extends Component {
   }
 }
 
-render(<App />, document.querySelector('#app'));\n`,
+render(<${componentName}Contaner />, document.querySelector('#app'));\n`,
           );
         }
       });
