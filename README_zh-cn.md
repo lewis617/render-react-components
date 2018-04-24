@@ -7,7 +7,7 @@
 
 [View English version](https://github.com/lewis617/render-react-components/blob/master/README.md)
 
-render-react-components（简称 rrc） 是一个包含 `init`、`dev` 的命令行工具，他基于 [roadhog](https://github.com/sorrycc/roadhog) 实现, 但是添加了 `init` 命令来递归找出当前项目中所有的 React 组件（仅限于 src 目录下的所有组件），并为它们创建相互隔离的 demo 页面。
+render-react-components（简称 rrc） 是一个命令行工具，可以递归找出当前项目中所有的 React 组件（仅限于 src 目录下的所有组件），并为它们创建相互隔离的 demo 页面。
 
 ![](https://img.alicdn.com/tfs/TB1VPzQnHGYBuNjy0FoXXciBFXa-894-444.gif)
 
@@ -27,7 +27,7 @@ $ rrc init -f=Component1
 ## 本地开发，支持代码热加载
 $ rrc dev
 
-## 删除 rrc 文件夹和 .rrc.js 文件，相当于删除了 rrc init 创建的所有文件
+## 删除了 rrc init 创建的所有文件
 $ rrc clean
 
 ```

@@ -7,7 +7,7 @@
 
 [查看中文版](https://github.com/lewis617/render-react-components/blob/master/README_zh-cn.md)
 
-render-react-components is a cli tool with `init`、`dev` commands. It's inspired by roadhog, but add the `init` command to recursilvly search all the react components in your project(only in src derectory) and create files to render them isolatedly.
+render-react-components is a cli tool to recursilvly search all the react components in your project(only in src derectory) and create files to render them isolatedly.
 
 ![](https://img.alicdn.com/tfs/TB1VPzQnHGYBuNjy0FoXXciBFXa-894-444.gif)
 
@@ -27,7 +27,7 @@ $ rrc init -f=Component1
 ## Local development
 $ rrc dev
 
-## Clean rrc directory and .rrc.js
+## Delete all the files that created by rrc init
 $ rrc clean
 
 ```
