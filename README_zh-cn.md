@@ -33,15 +33,18 @@ $ rrc clean
 ```
 
 ## 配置
-render-react-components 的 webpack 部分功能是基于 af-webpack 实现的。如需配置，可以在根目录的 .rrc.js 文件中配置：
+
+如需更改 Webpack 配置，可以在根目录的 .rrc.js 文件中编写：
 
 ```js
-export default {
-  externals: { react: 'window.React' },
-}
+module.exports = {
+  externals: {
+    react: 'React',
+    'react-dom': 'ReactDOM',
+    'prop-types': 'PropTypes',
+  }
+};
 ```
-
-更多配置，请参考 roadhog 的 [.webpackrc.js](https://github.com/sorrycc/roadhog/blob/master/README_zh-cn.md#%E9%85%8D%E7%BD%AE)。他们的写法是一样的。
 
 ## LICENSE
 

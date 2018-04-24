@@ -34,15 +34,17 @@ $ rrc clean
 
 ## Configuration
 
-render-react-components's webpack part is based on the af-webpack's implementation. For configuration, you can use `.rrc.js` configuration file, support ES6 syntax, e.g.
+For configuration, you can use `.rrc.js` configuration file, e.g.
 
 ```js
-export default {
-  externals: { react: 'window.React' },
-}
+module.exports = {
+  externals: {
+    react: 'React',
+    'react-dom': 'ReactDOM',
+    'prop-types': 'PropTypes',
+  }
+};
 ```
-
-More details, please checkout the [`.webpackrc.js`](https://github.com/sorrycc/roadhog/blob/master/README.md#configuration) of roadhog. They are exactly the same.
 
 ## LICENSE
 
