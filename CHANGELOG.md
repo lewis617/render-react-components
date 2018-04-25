@@ -1,5 +1,6 @@
 # Changelog 
 
+  * [[27befca](http://github.com/lewis617/render-react-components/commit/27befcaf6875c9626c79d7235d846907f4424d5e)] - `fix` 修复 resolve.alias 和 resolve.modules 的 bug 
 
 ## 1.1.2 / 2018-04-25 
 
