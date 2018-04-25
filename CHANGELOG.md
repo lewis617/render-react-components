@@ -1,5 +1,6 @@
 # Changelog 
 
+  * [[e744da7](http://github.com/lewis617/render-react-components/commit/e744da7eeab3665ff37cd0128b845303266e291b)] - `fix` 修复 resolve.modules bug，增加 extraResolveExtensions 和 extraResolveModules配置项 
   * [[e7e21c4](http://github.com/lewis617/render-react-components/commit/e7e21c40c8a065f30ebc02d5def5c1423d401837)] - `docs` remove build status 
   * [[82193d6](http://github.com/lewis617/render-react-components/commit/82193d6998a49ecd11aaae6c0ac63928b01b423d)] - `feat` 增加版本号 
 
