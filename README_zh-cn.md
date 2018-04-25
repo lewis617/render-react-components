@@ -63,7 +63,16 @@ module.exports = {
 ```
 
 ### alias
+
 配置 webpack 的 [resolve.alias](https://webpack.js.org/configuration/resolve/#resolve-alias) 属性。
+
+### extraResolveExtensions
+
+配置 webpack 的 [resolve.extensions](https://webpack.js.org/configuration/resolve/#resolve-extensions) 属性。
+
+### extraResolveModules
+
+配置 webpack 的 [resolve.modules](https://webpack.js.org/configuration/resolve/#resolve-extensions) 属性。
 
 ## LICENSE
 

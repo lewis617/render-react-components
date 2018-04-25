@@ -68,6 +68,14 @@ e.g.
 
 Configure webpack's [resolve.alias](https://webpack.js.org/configuration/resolve/#resolve-alias) property.
 
+### extraResolveExtensions
+
+Configure webpack's [resolve.extensions](https://webpack.js.org/configuration/resolve/#resolve-extensions) property.
+
+### extraResolveModules
+
+Configure webpack's [resolve.modules](https://webpack.js.org/configuration/resolve/#resolve-extensions) property.
+
 ## LICENSE
 
 MIT
